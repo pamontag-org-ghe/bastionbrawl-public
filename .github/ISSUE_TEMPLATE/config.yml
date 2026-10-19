@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privacy notice / Informativa privacy
+    url: https://bastionbrawl-aca.blackbay-7eff5bd8.italynorth.azurecontainerapps.io/privacy
+    about: Read how account data is handled / Leggi come vengono gestiti i dati dell'account.
+  - name: Delete your account / Elimina il tuo account
+    url: https://bastionbrawl-aca.blackbay-7eff5bd8.italynorth.azurecontainerapps.io/delete-account
+    about: Use the dedicated service, not a public issue / Usa il servizio dedicato, non una issue pubblica.

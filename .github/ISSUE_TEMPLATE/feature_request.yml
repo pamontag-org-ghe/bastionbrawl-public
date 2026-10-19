@@ -1,0 +1,47 @@
+name: Feature request / Nuova funzionalita'
+description: Suggest an improvement / Proponi un miglioramento.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Italian is welcome. Search existing ideas first.
+        Puoi scrivere in inglese o italiano. Cerca prima tra le proposte esistenti.
+        This report is public: do not include account information or personal data.
+        Questa proposta e' pubblica: non includere dati dell'account o dati personali.
+        A suggestion is not a release commitment / Una proposta non e' un impegno di rilascio.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity / Problema o opportunita'
+      description: What player need would this address? / Quale esigenza del giocatore risolverebbe?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution / Soluzione proposta
+      description: Describe the behavior you would like / Descrivi il comportamento desiderato.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered / Alternative considerate
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area / Ambito
+      options:
+        - Battles and balance / Battaglie e bilanciamento
+        - Cards, heroes and equipment / Carte, eroi ed equipaggiamento
+        - Campaign / Campagna
+        - Multiplayer
+        - Interface and accessibility / Interfaccia e accessibilita'
+        - Other / Altro
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context / Ulteriori dettagli
+      description: Optional examples or mockups with personal data removed.

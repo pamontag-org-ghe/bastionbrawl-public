@@ -1,0 +1,68 @@
+name: Bug report / Segnalazione bug
+description: Report a reproducible problem / Segnala un problema riproducibile.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Italian is welcome. Search existing reports first.
+        Puoi scrivere in inglese o italiano. Cerca prima tra le issue esistenti.
+
+        **This report is public / Questa segnalazione e' pubblica.**
+        Never include passwords, tokens, save files, purchase receipts or personal data.
+        Non inserire password, token, salvataggi, ricevute o dati personali.
+        Redact screenshots and logs / Oscura i dati sensibili in immagini e log.
+  - type: input
+    id: version
+    attributes:
+      label: Game version / Versione del gioco
+      placeholder: "Example / Esempio: 0.8.x (build number if available)"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform / Piattaforma
+      options:
+        - Android (Google Play)
+        - Android (APK)
+        - Web (itch.io)
+        - Windows
+        - Other / Altro
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Device and operating system / Dispositivo e sistema operativo
+      description: Include browser and version for Web. Do not include device identifiers.
+      placeholder: "Example: Pixel 8, Android 16 / Firefox on Windows 11"
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened? / Cosa e' successo?
+      description: Describe the issue and whether it happens every time or intermittently.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Passaggi per riprodurre
+      placeholder: |
+        1. Open / Apri...
+        2. Select / Seleziona...
+        3. Observe / Osserva...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / Comportamento atteso
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional screenshots or additional context / Immagini o dettagli facoltativi
+      description: Redact personal data. Do not upload save files, receipts, or complete account logs.
